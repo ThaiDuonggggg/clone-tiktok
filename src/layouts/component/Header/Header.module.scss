@@ -1,0 +1,43 @@
+.wrapper {
+    --search-border-radius: 92px;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 1px;
+    height: var(--default-layout-header-height);
+    position: fixed;
+    top: 0;
+    background-color: var(--white);
+    z-index: 20;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    padding-left: 16px;
+    padding-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+}
+
+// action
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+// More Button
+.more-btn {
+    margin-left: 16px;
+    padding: 0 4px;
+    cursor: pointer;
+    position: relative;
+}
