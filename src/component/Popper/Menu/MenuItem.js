@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 
 import styles from './Menu.module.scss';
@@ -5,16 +6,21 @@ import Button from '~/component/Button';
 
 const cx = classNames.bind(styles);
 
-function MenuItem({ data }) {
-    // const classes = cx('menu-item', {
-    //     modeDark: data.modeDark,
-    // });
+function MenuItem({ data, onclick }) {
+    const classes = cx('menu-item', {
+        separate: data.separate,
+    });
 
     return (
-        <Button className={cx('menu-item')} leftIcon={data.icon} to={data.to}>
+        <Button className={classes} leftIcon={data.icon} to={data.to} onClick={onclick}>
             {data.title}
         </Button>
     );
 }
+
+MenuItem.propTypes = {
+    data: PropTypes.object.isRequired,
+    onclick: PropTypes.func,
+};
 
 export default MenuItem;

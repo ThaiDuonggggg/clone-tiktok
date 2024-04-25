@@ -20,4 +20,33 @@
     padding-bottom: 8px;
 }
 
-// Menu item
+.menu-container {
+    overflow-y: auto;
+}
+
+// Header Menu Item
+.header {
+    flex-shrink: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: -8px;
+    position: relative;
+}
+
+.back-btn {
+    height: 100%;
+    width: 50px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.header-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.separate {
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
+}

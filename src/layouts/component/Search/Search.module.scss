@@ -19,6 +19,7 @@
     input {
         height: 100%;
         flex: 1;
+        padding-right: 40px;
         font-size: 1.6rem;
         font-weight: 400;
         font-family: var(--font-family);
@@ -55,7 +56,23 @@
 .delete-btn,
 .loading-btn {
     position: absolute;
+    height: 16px;
+    top: 50%;
+    transform: translateY(-50%);
     right: calc(var(--search-button-width) + 12px);
+}
+
+.loading-btn {
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+    from {
+        transform: translateY(-50%) rotate(0);
+    }
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
 }
 
 .search-btn {
