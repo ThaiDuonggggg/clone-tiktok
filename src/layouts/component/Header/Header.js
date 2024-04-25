@@ -24,8 +24,8 @@ import {
     SettingsIcon,
     LogOutIcon,
 } from '~/component/Icons';
-import Menu from '~/component/Popper/Menu/Menu';
-import Image from '~/component/Image/Image';
+import Menu from '~/component/Popper/Menu';
+import Image from '~/component/Image';
 
 const cx = classNames.bind(styles);
 
