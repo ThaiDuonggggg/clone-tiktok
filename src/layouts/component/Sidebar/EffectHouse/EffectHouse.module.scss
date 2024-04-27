@@ -1,0 +1,39 @@
+.wrapper {
+    position: relative;
+    padding-top: 16px;
+    padding-left: 8px;
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
+}
+
+.container {
+    height: 50px;
+    margin-bottom: 30px;
+    padding-right: 8px;
+    position: relative;
+}
+
+.img {
+    height: 52px;
+    border-radius: 8px;
+    display: block;
+    user-select: none;
+}
+
+.body {
+    width: 208px;
+    display: flex;
+    align-items: center;
+}
+.title {
+    position: absolute;
+    width: 141px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 8px;
+}
+.desc {
+    color: rgb(255, 245, 201);
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 16px;
+}
